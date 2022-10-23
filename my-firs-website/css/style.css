@@ -1,23 +1,17 @@
 body{
     background-color: gray;
-    color: white;
-    margin: 0;
+    color: black;
+    margin: 0px;
 }
 
-#a{
-    background-color: green;
-}
-#b{
-    background-color: red;
-}
-#c{
-    background-color: rebeccapurple;
-}
-#d{
-    background-color: blue;
+
+h1{
+    margin: 9px;
+    padding: 0px;
+    border: 1px solid black;
 }
 
 .box{
     margin: 9px;
-    padding: 1px;
+    border: 1px solid black;
 }
