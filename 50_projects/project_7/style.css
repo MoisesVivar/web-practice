@@ -1,0 +1,84 @@
+:root{
+    --background-clr-left: rgba(87, 84, 236, 0.7);
+    --background-clr-right: rgba(43, 43, 43, 0.7);
+    --background-clr-btn-left: rgba(87, 84, 236, 1);
+    --background-clr-btn-right: rgba(14, 122, 13, 1);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.split{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: flex 1s ease-in-out;
+}
+
+.split.left{
+    flex: 1;
+    background-image: url('images/play-station-5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.split.left::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: var(--background-clr-left);
+}
+
+.split.right{
+    flex: 1;
+    background-image: url('images/xbox-series-x.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.split.right::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: var(--background-clr-right);
+}
+
+h1{
+    color: #FFF;
+    z-index: 1;
+}
+
+.btn{
+    z-index: 1;
+    text-decoration: none;
+    color: #FFF;
+    padding: 10px 50px;
+    border: #FFF solid 2px;
+}
+
+.split.left .btn:hover{
+    background-color: var(--background-clr-btn-left);
+    border-color: var(--background-clr-btn-left)
+}
+
+.split.right .btn:hover{
+    background-color: var(--background-clr-btn-right);
+    border-color: var(--background-clr-btn-right);
+}
