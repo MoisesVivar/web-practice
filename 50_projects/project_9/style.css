@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: cornflowerblue;
+}
+
+#buttons{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+
+.btn{
+    border-radius: 5px;
+    border: none;
+    background-color: rebeccapurple;
+    color: white;
+    font-size: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 10px 30px
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.btn:hover{
+    opacity: 0.9;
+}
