@@ -20,7 +20,7 @@ $textarea.addEventListener('keyup', (event)=>{
 })
 
 function get_random_choice(){
-    var cycles = 30, count = 0, delta = 100
+    var cycles = 30, count = 0, delta = 200
 
     var randomizer = setInterval(()=>{
         var tags = document.querySelectorAll(".tag")
@@ -29,7 +29,7 @@ function get_random_choice(){
         if (count == cycles)
             clearInterval(randomizer)
         else{
-            setTimeout(() => $item.classList.remove('highlight'), 100)
+            setTimeout(() => $item.classList.remove('highlight'), delta/2)
             count ++
         }
     }, delta)
